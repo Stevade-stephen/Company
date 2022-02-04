@@ -20,7 +20,7 @@ public class Main {
         Company decagon = new Company("Decagon", "Edo Tech Park");
         Recruitment recruitment = new RecruitmentImpl();
         Application application = new ApplicationImpl();
-        Applicant chisom = new Applicant("Chisom", "Ada", "Tech Park", Gender.FEMALE, Qualification.MSc, Role.JUNIOR_DEVELOPER);
+        Applicant chisom = new Applicant("Chisom", "Ada", "Tech Park", Gender.PREFER_NOT_SAY, Qualification.MSc, Role.JUNIOR_DEVELOPER);
         Department programs = new Department("programs");
         Staff ceo = new Staff("Chika", "Nwobi", "Lekki", Gender.MALE, null, Role.CEO);
         Staff hr = new Staff("Temi", "Adekunle", "Lekki", Gender.FEMALE, null, Role.HR);
@@ -31,6 +31,8 @@ public class Main {
         recruitment.singleHire(chisom, hr, decagon);
         System.out.println(decagon.getApplicants());
         System.out.println(decagon.getStaffs());
+
+        Company company = new Company("Johnny and Co", "Lagos");
 
 
 

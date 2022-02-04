@@ -10,7 +10,7 @@ public class Staff extends Person {
     private Role role;
     private PerformanceMetrics performanceMetrics;
 
-    public Staff (){
+    public Staff () {
 
     }
 
